@@ -7,6 +7,7 @@ use crate::controller::{
   list_users,
   update_user
 };
+use crate::user_service::UserService;
 mod model;
 mod controller;
 
