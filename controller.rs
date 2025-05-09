@@ -2,7 +2,8 @@ use axum::extract::Path;
 use axum::http::StatusCode;
 use axum::Json;
 use serde_json::Value;
-
+use axum::Extension;
+use crate::user_service::UserService;
 use crate::model::{User, UserInfo};
 
 pub async fn list_users(service: Extension<UserService>) ->Result<Json<Vec<User>>,StatusCode> {
