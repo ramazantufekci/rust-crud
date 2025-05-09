@@ -1,5 +1,6 @@
 use axum::Router;
 use axum::routing::{delete, get, post, put};
+use axum::Extension;
 use crate::controller::{
   create_user,
   delete_user,
