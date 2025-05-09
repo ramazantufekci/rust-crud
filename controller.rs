@@ -1,6 +1,5 @@
 use axum::extract::Path;
-use axum::http::StatusCode;
-use axum::Json;
+use axum::{http::StatusCode, Json};
 use serde_json::Value;
 use axum::Extension;
 use crate::user_service::UserService;
